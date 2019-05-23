@@ -17,6 +17,7 @@ STM32F2系列与[STM32F1](https://github.com/sochub/STM32F1)系列采用相同�
 
 ### [收录型号](https://github.com/sochub/STM32F2)
 
+* [STM32F205](https://github.com/sochub/STM32F205) 
 * [STM32F207](https://github.com/sochub/STM32F207) 
 
 ### [选型建议](https://github.com/sochub/STM32F2)
