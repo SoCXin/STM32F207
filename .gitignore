@@ -24,3 +24,25 @@
 *.rst
 *.sym
 *.bin
+__pycache__/
+*.py[cod]
+*$py.class
+*__pyc*/
+*.pio/
+*.vscode/
+misc/svd/*.html
+*.rst
+examples/**/*.yml
+examples/**/*.md
+**/CONTR*
+**/CHANGE*
+.gitmodules
+**/*/README*
+LICENSE*
+*.png
+*.jpg
+*.rst
+# *.md
+**/*/README*
+# C extensions
+*.so
