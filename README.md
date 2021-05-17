@@ -2,7 +2,7 @@
 
 [![sites](http://182.61.61.133/link/resources/SoC.png)](http://SoC.Xin)
 
-#### [Vendor](https://github.com/SoCXin/Vendor)：[ST](https://github.com/SoCXin/ST)
+#### [Vendor](https://github.com/SoCXin/Vendor)：[ST](https://www.st.com/zh/microcontrollers-microprocessors.html)
 #### [Core](https://github.com/SoCXin/Cortex)：[Cortex M3](https://github.com/SoCXin/CM3)
 #### [Level](https://github.com/SoCXin/Level)：120MHz （150 DMIPS/398 CoreMark）
 
@@ -14,7 +14,7 @@
 
 IO数量较多，器件提供的封装选项包括LQFP64、LQFP100、LQFP144、WLCSP66（< 4 × 4mm）、UFBGA176和LQFP176。
 
-[![sites](docs/STM32F205.png)](https://www.st.com/zh/microcontrollers-microprocessors/STM32F205-series.html)
+[![sites](docs/STM32F205.png)](https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f2-series.html)
 
 #### 关键特性
 
@@ -30,7 +30,7 @@ IO数量较多，器件提供的封装选项包括LQFP64、LQFP100、LQFP144、W
 
 ### [选型建议](https://github.com/SoCXin)
 
-[STM32F205](https://github.com/SoCXin/STM32F205)相比较[STM32F1](https://github.com/SoCXin/STM32F1)系列具有更全面的提升
+[STM32F205](https://github.com/SoCXin/STM32F205) 相比较[STM32F1](https://github.com/SoCXin/STM32F1)系列具有更全面的提升
 
 * STM32F20505/215 – 120 MHz CPU/150 DMIPS，具有先进连接功能和加密功能的高达1 MB Flash存储器
 * STM32F20507/217 – 120 MHz CPU/150 DMIPS，在STM32F20505/215基础上增加了以太网MAC和照相机接口；大尺寸封装可提供更多GPIO和功能
