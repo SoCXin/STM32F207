@@ -1,0 +1,77 @@
+{
+    "type":"MCU",
+    "name":"STM32F205",
+    "series":["STM32F205","STM32F205","STM32F205","STM32F205"],
+    "compatible":["CH552","CH551"],
+    "price":[6.5,11.5],
+    "description":"ST Cortex-M3 MCU",
+    "peripheral": ["TIM","ADC","USB","UART","SPI","LDO","PWM"],
+    "package":["MSOP10","QFN16","SOP16","TSSOP20"],
+    "RAM":[1,1],
+    "ROM":[16,16],
+    "DATA":[128,128],
+    "manufacturer": {
+        "vendor":"Synwit",
+        "homepage": "http://www.synwit.cn/productList1/9.html"
+    },
+    "url":"http://www.SoC.xin/STM32F205",
+    "repo":"https://github.com/SoCXin/STM32F205",
+    "version":"1.0.0",
+    "Core": {
+        "num": 1,
+        "architecture":"Cortex-M4",
+        "Freq":[8,120]
+    },
+    "UART": {
+        "mark": ["UART1","UART2"],
+        "BIT":[5,6,7,8,9],
+        "ISO7816":true,
+        "IrDA":true,
+        "LIN":true,
+        "FIFO": 16,
+        "BPS": [48,3000000]
+    },
+    "TIM": {
+        "resolution":[16,16,16],
+        "rate": 1024
+    },
+    "CLK": {
+        "HSI": [24000],
+        "LSI": [32],
+        "PLL": [16000,96000],
+        "DIV": [1,128],
+        "SYS": [187,24000],
+        "accuracy": 0.02
+    },
+    "ADC": {
+        "num": 1,
+        "channel": 4,
+        "resolution": 8,
+        "rate": 2400
+    },
+    "USB": {
+        "num": 1,
+        "FIFO": 64,
+        "more":["FS","type-C","Host","Device"]
+    },
+    "PWR": {
+        "VDD": [2800,5000],
+        "Ivdd": 3.5,
+        "LDO": [5000,3300],
+        "rate": 1024
+    },
+    "PWM": {
+        "num": 2,
+        "resolution": 8,
+        "rate": 256
+    },
+    "EMC": {
+        "EFT": 2000,
+        "ESD": 4000
+    },
+    "upload": {
+        "ISP": true,
+        "SWD": true,
+        "speed": 115200
+    }
+}
