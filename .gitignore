@@ -7,23 +7,30 @@
 *.lck
 *.autosave
 *~
-
+*.dep
+*.log
+*.ewt
+*.ewd
+*.pyc
+*.crf
+*.dep
+*.map
+*.hex
+*.bin
+*.bak
+*.txt
+*.lst
+*.uvgu*
+*.sct
+*.elf
+*.ini
+*.pio/
+*.vscode/
+settings/
+Debug/
 # GNU/Make
 */*.s
 
-# SDCC
-*.adb
-*.hex
-*.lst
-*.map
-*.asm
-*.ihx
-*.lk
-*.mem
-*.rel
-*.rst
-*.sym
-*.bin
 __pycache__/
 *.py[cod]
 *$py.class

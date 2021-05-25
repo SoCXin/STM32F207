@@ -2,9 +2,8 @@
 
 [![sites](http://182.61.61.133/link/resources/SoC.png)](http://SoC.Xin)
 
-#### [Vendor](https://github.com/SoCXin/Vendor)：[ST](https://www.st.com/zh/microcontrollers-microprocessors.html)
-#### [Core](https://github.com/SoCXin/Cortex)：[Cortex M3](https://github.com/SoCXin/CM3)
-#### [Level](https://github.com/SoCXin/Level)：120MHz （150 DMIPS/398 CoreMark）
+* [ST](https://www.st.com/zh/)：[Cortex-M3](https://github.com/SoCXin/Cortex)
+* [L4R5](https://github.com/SoCXin/Level) ：120 MHz x 1.25 DMIPS/MHz (398CoreMark)
 
 ## [简介](https://github.com/SoCXin/STM32F205/wiki)
 
@@ -19,7 +18,7 @@ IO数量较多，器件提供的封装选项包括LQFP64、LQFP100、LQFP144、W
 #### 关键特性
 
 * 1MB Flash
-* MAC、USB 2.0 HS OTG
+* USB 2.0 HS OTG
 
 
 ### [资源收录](https://github.com/SoCXin)
