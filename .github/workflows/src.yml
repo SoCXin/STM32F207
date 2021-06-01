@@ -46,7 +46,15 @@ jobs:
         path: codecheck.txt
 
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        dir:
+          - "freertos"
+          - "gcc"
+          # - "spl"
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Check out
         uses: actions/checkout@v2
@@ -59,20 +67,26 @@ jobs:
         with:
           release: 10-2020-q4
 
-      - name: build gcc
-        if: success()
-        working-directory: src/gcc
-        run: |
-          make
-
-      - name: build freertos
-        if: success()
+      - name: build
+        if: matrix.os == 'ubuntu-latest'
         working-directory: src/template
         run: |
-          make -C freertos
+          make ${{ matrix.dir }}
 
-      - name: Upload
-        uses: actions/upload-artifact@v2
+      - name: build
+        if: matrix.os == 'windows-latest'
+        working-directory: src/template
+        run: |
+          make ${{ matrix.dir }} SHELL=cmd
+
+      - name: build
+        if: matrix.os == 'macos-latest'
+        working-directory: src/template
+        run: |
+          brew install make
+          gmake -C ${{ matrix.dir }}
+
+      - uses: actions/upload-artifact@v2
         with:
-          name: firmware
-          path: src/gcc/obj
+          name: template_${{ matrix.dir }}
+          path: src/template/${{ matrix.dir }}

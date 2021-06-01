@@ -17,6 +17,8 @@ COPY*
 *CONTRIBU*
 LICENSE*
 HACKING*
+Doxyfile
+README*
 *.swp
 *.lck
 *.log
@@ -43,6 +45,10 @@ HACKING*
 *.xlsx
 *.zip
 *.xcf
+*.png
+*.jpg
+*.rst
+*.srec
 *_sc*
 *cm23*
 *cm33*
@@ -53,9 +59,7 @@ HACKING*
 *cm0*
 *.uvgu*
 .gitmodules
-*.png
-*.jpg
-*.rst
+.settings
 .travis.yml
 doc
 *dox
@@ -63,8 +67,6 @@ tests
 docs
 # mk
 *.md
-Doxyfile
-**/*/README*
 *.so
 *.dcm
 *32g*
