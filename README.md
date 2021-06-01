@@ -16,13 +16,12 @@
 ### 关键特性
 
 * 15个通信接口（6个7.5 Mb/s的USART、3个30 Mb/s的SPI、3个I²C、2个CAN、SDIO）
+* 2x12bit DAC、24ch 3x12bit ADC 2MSPS（交错模式6MSPS）
 * 2个USB OTG（其中一个支持HS）
 * 175 µA/MHz的功耗（@ 120 MHz）
 
-#### 封装规格
+#### 封装规格 (4)
 
-* UFBGA176 (10×10mm)
-* LQFP176 (24×24mm)
 * LQFP144 (20×20mm)
 * LQFP100 (14×14mm)
 * LQFP64 (10×10mm)
@@ -36,6 +35,6 @@
 
 ### [选型建议](https://github.com/SoCXin)
 
-[STM32F2X7](https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f2-series/stm32f2x7.html) 相较[STM32F2X5](https://github.com/SoCXin/STM32F205) 增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8~14位并行摄像头接口，只有100~176引脚封装。
+[STM32F2X7](https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f2-series/stm32f2x7.html) 相较[STM32F2X5](https://github.com/SoCXin/STM32F205) 增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8-14位并行摄像头接口，只有100-176引脚封装。
 
 ### [探索芯世界 www.SoC.xin](http://www.SoC.Xin)
