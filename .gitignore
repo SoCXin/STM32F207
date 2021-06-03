@@ -34,7 +34,7 @@ README*
 *.lst
 *.sct
 *.elf
-*.ini
+# *.ini
 *.gbr
 *.drl
 *.ods

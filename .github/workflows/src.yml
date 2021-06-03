@@ -90,3 +90,37 @@ jobs:
         with:
           name: template_${{ matrix.dir }}
           path: src/template/${{ matrix.dir }}
+
+  platformio:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-16.04, windows-latest, macos-latest]
+        python-version: [3.7]
+        example:
+          - "cmsis-blink"
+          - "libopencm3-blink"
+          - "mbed-rtos"
+          - "stm32cube-hal-blink"
+          - "zephyr-subsys-usb-hid-mouse"
+
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U https://github.com/platformio/platformio/archive/develop.zip
+
+      - name: platformio
+        working-directory: src/platformio
+        run: |
+          platformio run -d ${{ matrix.example }}
