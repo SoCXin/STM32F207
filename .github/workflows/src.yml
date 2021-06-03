@@ -124,10 +124,12 @@ jobs:
       - name: platformio build
         working-directory: src/platformio
         run: |
-          platformio run -d ${{ matrix.example }}
+          # platformio run -d ${{ matrix.example }}
+          pio ci --board=nucleo_f207zg -d ${{ matrix.example }}
+
 
       - uses: actions/upload-artifact@v2
         with:
           name: platformio_${{ matrix.example }}_${{ matrix.os }}
-          path: src/template/${{ matrix.example }}/.pio/build/nucleo_f207zg
+          path: src/platformio/${{ matrix.example }}/.pio/build/nucleo_f207zg/firmware.bin
 
