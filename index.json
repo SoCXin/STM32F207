@@ -1,7 +1,7 @@
 {
     "type":"MCU",
-    "name":"STM32F205",
-    "title": "ST STM32F205 MCU",
+    "name":"STM32F207",
+    "title": "ST STM32F207 MCU",
     "description":"ST Cortex-M3 MCU",
     "Core": {
         "num": 1,
@@ -12,21 +12,23 @@
     },
     "manufacturer": {
         "vendor":"ST",
-        "homepage":"https://www.st.com/content/st_com/zh/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32h7-series/STM32F205-value-line.htm"
+        "homepage":"https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/SoCXin/STM32F205.git"
+        "url": "https://github.com/SoCXin/STM32F207.git"
     },
     "version":"1.0.0",
-    "series":["STM32F205","STM32F215"],
-    "package":["LQFP176","LQFP144","LQFP100","LQFP64","LQFP176","WLCSP66","UFBGA176"],
-    "peripheral": ["ADC","UART","I2C","SPI","PWM"],
+    "series":["STM32F207","STM32F217","STM32F215","STM32F205"],
+    "package":["LQFP176","LQFP144","LQFP100","LQFP64","BGA176","WLCSP66"],
+    "peripheral": ["ADC","DAC","USB","OTG","CAN","SDIO","USART","SPI","IIC"],
     "keywords": [
         "dev-platform",
         "ARM",
         "Cortex-M",
-        "ADC","DAC","SDIO","CAN","I2C","RTC","SPI",
+        "STMicroelectronics",
+        "STM32",
+        "MAC10/100","DAC","SDIO","CAN","I2C","RTC","SPI",
         "3.6V","1.8V"
     ]
 }
