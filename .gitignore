@@ -45,7 +45,7 @@ README*
 *.xlsx
 *.zip
 *.xcf
-*.png
+# *.png
 *.jpg
 *.rst
 *.srec
@@ -64,7 +64,7 @@ README*
 doc
 *dox
 tests
-docs
+# docs
 # mk
 *.md
 *.so
