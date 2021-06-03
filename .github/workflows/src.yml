@@ -102,7 +102,7 @@ jobs:
           - "mbed-rtos"
           - "stm32cube-hal-blink"
           - "zephyr-subsys-usb-hid-mouse"
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-16.04, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -128,4 +128,5 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: platformio_${{ matrix.example }}_${{ matrix.os }}
-          path: src/template/${{ matrix.example }}/.pio/build/nucleo_f207zg/firmware.bin
+          path: src/template/${{ matrix.example }}/.pio/build/nucleo_f207zg
+
