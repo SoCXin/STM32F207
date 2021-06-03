@@ -98,6 +98,7 @@ jobs:
         example:
           - "cmsis-blink"
           - "libopencm3-blink"
+          - "arduino-blink"
           - "mbed-rtos"
           - "stm32cube-hal-blink"
           - "zephyr-subsys-usb-hid-mouse"
@@ -112,7 +113,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.9
+          python-version: 3.7
 
       - name: Install dependencies
         run: |
