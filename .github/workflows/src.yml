@@ -124,8 +124,8 @@ jobs:
       - name: platformio build
         working-directory: src/platformio
         run: |
-          # platformio run -d ${{ matrix.example }}
-          pio ci --board=nucleo_f207zg -d ${{ matrix.example }}
+          platformio run -d ${{ matrix.example }}
+          # pio ci --board=nucleo_f207zg -d ${{ matrix.example }}
 
 
       - uses: actions/upload-artifact@v2
