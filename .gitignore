@@ -30,7 +30,7 @@ README*
 *.hex
 *.bin
 *bak
-# *.txt
+*.txt
 *.lst
 *.sct
 *.elf
@@ -46,7 +46,7 @@ README*
 *.zip
 *.xcf
 # *.png
-# *.jpg
+*.jpg
 *.rst
 *.srec
 *_sc*
@@ -66,6 +66,8 @@ doc
 tests
 # docs
 # mk
+*.html
+*.htm
 *.md
 *.so
 *.dcm
@@ -78,3 +80,4 @@ tests
 *32f1*
 *32f0*
 *32l*
+*.icf
