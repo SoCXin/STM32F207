@@ -15,11 +15,10 @@
 
 ### 关键特性
 
-* 15个通信接口（6个7.5 Mb/s的USART、3个30 Mb/s的SPI、3个I²C、2个CAN、SDIO）
-* 2x12bit DAC、24ch 3x12bit ADC 2MSPS（交错模式6MSPS）
-* 2个USB OTG（其中一个支持HS）
-* 175 µA/MHz的功耗（@ 120 MHz）
-* STM32F217还整合了加密/HASH处理器，为AES 128、192、256、Triple DES和HASH（MD5、SHA-1）提供硬件加速。
+* 2 x USB OTG (其中一个支持HS)
+* 15个通信接口(6个7.5 Mb/s的USART、3个30 Mb/s的SPI、3个I²C、2个CAN、SDIO)
+* 2x12bit DAC, 24ch 3x12bit ADC 2MSPS(交错模式6MSPS)
+* STM32F215/STM32F217整合加密/HASH处理器，为AES 128、192、256、Triple DES和HASH(MD5、SHA-1)提供硬件加速。
 
 ### [资源收录](https://github.com/SoCXin)
 
@@ -29,17 +28,15 @@
 
 ### [选型建议](https://github.com/SoCXin)
 
-[STM32F207](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html)是STM32高性能MCU的入门级产品，已经比较悠久，相较低配版本[STM32F205](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x5.html) 增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8-14位并行摄像头接口，并且只有100-176引脚封装。
+[STM32F207](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html)是STM32高性能MCU的入门级产品，已经比较悠久，相较低配版本[STM32F205](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x5.html) 增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8-14位并行摄像头接口，并且只有100-176引脚封装。STM32F21X相对同型号STM32F20X增加了硬件加密单元。
 
 #### 封装规格
 
-* STM32F205: LQFP144 (20×20mm)
-* STM32F205: LQFP100 (14×14mm)
-* STM32F205: LQFP64 (10×10mm)
-* STM32F205: WLCSP66 (4×4mm)
-* STM32F207: LQFP100 (14×14mm)
-* STM32F207: LQFP144 (20×20mm)
-* STM32F207: BGA/LQFP176
+* STM32F205R: WLCSP66 (4×4mm)
+* STM32F205R: LQFP64  (10×10mm)
+* STM32F207V: LQFP100 (14×14mm)
+* STM32F207Z: LQFP144 (20×20mm)
+* STM32F207I: BGA/LQFP176
 
 [STM32F2系列](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2-series.html)与[STM32F1系列](https://www.st.com/zh/microcontrollers-microprocessors/stm32f1-series.html)外设兼容性
 
@@ -48,5 +45,9 @@
 ### 相关开发板 (NUCLEO-F207ZG)
 
 [![sites](docs/B.jpg)](https://detail.tmall.com/item.htm?spm=a230r.1.14.18.f8d755adypkmDs&id=613173541804&ns=1&abbucket=19)
+
+#### 高完成度开源项目
+
+* [Arduino_Core_STM32](https://github.com/stm32duino/Arduino_Core_STM32)
 
 ### [探索芯世界 www.SoC.xin](http://www.SoC.Xin)
