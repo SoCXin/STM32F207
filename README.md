@@ -29,21 +29,24 @@
 
 ### [选型建议](https://github.com/SoCXin)
 
-[STM32F207](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html) 相较 [STM32F205](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x5.html) 增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8-14位并行摄像头接口，只有100-176引脚封装。
+[STM32F207](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x7.html)是STM32高性能MCU的入门级产品，已经比较悠久，相较低配版本[STM32F205](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2x5.html) 增加了符合IEEE 1588 v2标准要求的以太网MAC10/100和能够连接CMOS照相机传感器的8-14位并行摄像头接口，并且只有100-176引脚封装。
 
-典型开源资源: nucleo_f207zg
+#### 封装规格
 
-#### STM32F205封装规格
+* STM32F205: LQFP144 (20×20mm)
+* STM32F205: LQFP100 (14×14mm)
+* STM32F205: LQFP64 (10×10mm)
+* STM32F205: WLCSP66 (4×4mm)
+* STM32F207: LQFP100 (14×14mm)
+* STM32F207: LQFP144 (20×20mm)
+* STM32F207: BGA/LQFP176
 
-* LQFP144 (20×20mm)
-* LQFP100 (14×14mm)
-* LQFP64 (10×10mm)
-* WLCSP66 (4×4mm)
+[STM32F2系列](https://www.st.com/zh/microcontrollers-microprocessors/stm32f2-series.html)与[STM32F1系列](https://www.st.com/zh/microcontrollers-microprocessors/stm32f1-series.html)外设兼容性
 
-#### STM32F207封装规格
+[![sites](docs/F1VSF2.jpg)](http://www.elecfans.com/d/1153505.html)
 
-* BGA/LQFP176
-* LQFP144 (20×20mm)
-* LQFP100 (14×14mm)
+### 相关开发板 (NUCLEO-F207ZG)
+
+[![sites](docs/B.jpg)](https://detail.tmall.com/item.htm?spm=a230r.1.14.18.f8d755adypkmDs&id=613173541804&ns=1&abbucket=19)
 
 ### [探索芯世界 www.SoC.xin](http://www.SoC.Xin)
