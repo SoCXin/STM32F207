@@ -85,3 +85,7 @@ settings
 Obj
 List
 Exe
+*.d
+*.o
+*.axf
+*.lnp
